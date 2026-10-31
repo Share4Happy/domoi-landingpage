@@ -1,0 +1,98 @@
+<!-- 04 · NHÂN VẬT (CHARACTERS) -->
+<section class="section characters-section" id="characters">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Tuyến nhân vật</span>
+      <h2 class="section-title">Hà Linh &amp; Chú chó Đốm</h2>
+      <p class="section-description">
+        Mô hình thiết kế nhân vật (Character Model Sheet) thể hiện sự thay đổi ngoại hình, tính cách và trang phục theo dòng thời gian.
+      </p>
+    </div>
+
+    <div class="characters-grid">
+      <!-- Nhân vật: Hà Linh (Interactive Age Switcher 14 ⇄ 21) -->
+      <article class="character-card" id="haLinhCharacterView" data-current-age="14">
+        <!-- Age Switcher Bar -->
+        <div class="age-toggle-bar">
+          <button class="age-btn is-active" data-age="14">
+            <span>🌸 Hà Linh (14 tuổi)</span>
+          </button>
+          <button class="age-btn" data-age="21">
+            <span>🌿 Hà Linh (21 tuổi)</span>
+          </button>
+        </div>
+
+        <!-- Artwork Frame (Đóng khung Model Sheet) -->
+        <div class="character-view-container card-interactive" id="haLinhFrame" data-lightbox="/images/characters/halinh-14-model-sheet.png" data-caption="Bản vẽ Model Sheet nhân vật Hà Linh (14 tuổi)">
+          <img 
+            id="haLinhImage"
+            class="character-artwork" 
+            src="/images/characters/halinh-14-model-sheet.png" 
+            alt="Model Sheet nhân vật Hà Linh" 
+            loading="lazy"
+          />
+          <button 
+            type="button" 
+            class="character-sheet-btn" 
+            id="haLinhModelSheetBtn" 
+            data-lightbox="/images/characters/halinh-14-model-sheet.png" 
+            data-caption="Bản vẽ Model Sheet nhân vật Hà Linh (14 tuổi)">
+            <span>🔍 Phóng to Model Sheet</span>
+          </button>
+        </div>
+
+        <!-- Details Info for Age 14 -->
+        <div class="character-details" id="haLinhInfo14">
+          <h3 class="character-name">Hà Linh — Tuổi 14</h3>
+          <p class="character-subtitle">Thiếu nữ tinh nghịch &amp; Giàu cảm xúc</p>
+          <p class="character-desc">
+            Cô bé hồn nhiên với mái tóc buộc gọn gàng, ưa thích sự tự do và khám phá. Trang phục thường nhật là chiếc áo phông trắng phối tay cam năng động, quần short xanh lục và đôi dép quai tiện lợi chạy nhảy trên triền cỏ.
+          </p>
+        </div>
+
+        <!-- Details Info for Age 21 (Initially Hidden) -->
+        <div class="character-details" id="haLinhInfo21" style="display: none;">
+          <h3 class="character-name">Hà Linh — Tuổi 21</h3>
+          <p class="character-subtitle">Tình nguyện viên trạm cứu hộ thú cưng</p>
+          <p class="character-desc">
+            Trưởng thành, điềm đạm, sống sâu sắc và tận tâm. Mái tóc buông xõa ngang vai nhẹ nhàng. Cô gắn bó với chiếc áo gile len màu xanh rêu ấm áp, sơ mi kem bên trong cùng quần ống rộng màu be thanh lịch.
+          </p>
+        </div>
+      </article>
+
+      <!-- Nhân vật: Chú chó Đốm -->
+      <article class="character-card">
+        <div style="height: 48px; display: flex; align-items: center; margin-bottom: var(--space-6);">
+          <span class="badge" style="font-size: 0.85rem; padding: 0.4rem 1.2rem;">
+            🐾 Bạn đồng hành bốn chân
+          </span>
+        </div>
+
+        <!-- Artwork Frame (Đóng khung Model Sheet) -->
+        <div class="character-view-container card-interactive" data-lightbox="/images/characters/dom-model-sheet.png" data-caption="Bản vẽ Model Sheet nhân vật chú chó Đốm">
+          <img 
+            class="character-artwork" 
+            src="/images/characters/dom-model-sheet.png" 
+            alt="Model Sheet chú chó Đốm" 
+            loading="lazy"
+          />
+          <button 
+            type="button" 
+            class="character-sheet-btn" 
+            data-lightbox="/images/characters/dom-model-sheet.png" 
+            data-caption="Bản vẽ Model Sheet nhân vật chú chó Đốm">
+            <span>🔍 Phóng to Model Sheet</span>
+          </button>
+        </div>
+
+        <div class="character-details">
+          <h3 class="character-name">Chú Chó Đốm 🐾</h3>
+          <p class="character-subtitle">Linh hồn cảm xúc &amp; Sợi dây kết nối</p>
+          <p class="character-desc">
+            Chú cún lông tơ xù màu trắng kem với đốm nâu độc nhất quanh mắt trái và lưng. Đôi tai mềm cụp rủ xuống, chiếc đuôi luôn vẫy tít mừng rỡ. Đốm đại diện cho sự trung trinh vô điều kiện và vẻ đẹp trong sáng của loài động vật bên con người.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

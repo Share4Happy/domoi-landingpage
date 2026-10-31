@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D082" />
+      <stop offset="50%" stop-color="#EFCA9E" />
+      <stop offset="100%" stop-color="#D7685A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#34425C" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Background decorative pattern / paw tracks -->
+  <g fill="#604826" opacity="0.08">
+    <ellipse cx="1050" cy="120" rx="40" ry="32" transform="rotate(-15 1050 120)" />
+    <circle cx="1020" cy="60" r="14" />
+    <circle cx="1060" cy="45" r="15" />
+    <circle cx="1100" cy="65" r="14" />
+    
+    <ellipse cx="920" cy="240" rx="40" ry="32" transform="rotate(-25 920 240)" />
+    <circle cx="890" cy="180" r="14" />
+    <circle cx="930" cy="165" r="15" />
+    <circle cx="970" cy="185" r="14" />
+  </g>
+
+  <!-- Card Container -->
+  <rect x="80" y="75" width="1040" height="480" rx="36" fill="#FFFDF9" opacity="0.92" filter="url(#shadow)" />
+  <rect x="80" y="75" width="1040" height="480" rx="36" fill="none" stroke="#604826" stroke-opacity="0.12" stroke-width="2" />
+
+  <!-- Content Group -->
+  <g transform="translate(140, 140)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="410" height="44" rx="22" fill="#F3D082" opacity="0.85" />
+    <text x="20" y="28" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#604826" letter-spacing="1">
+      PHIM HOẠT HÌNH NGẮN 2D · ĐỒ ÁN TỐT NGHIỆP
+    </text>
+
+    <!-- Title: Đốm Ơi -->
+    <text x="0" y="145" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="88" font-weight="900" fill="#604826">
+      Đốm Ơi
+    </text>
+    <!-- Little paw dot next to title -->
+    <circle cx="340" cy="100" r="12" fill="#D7685A" />
+    <circle cx="365" cy="85" r="9" fill="#D7685A" />
+    <circle cx="385" cy="98" r="9" fill="#D7685A" />
+    <circle cx="365" cy="122" r="18" fill="#D7685A" />
+
+    <!-- Tagline -->
+    <text x="0" y="215" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="28" font-weight="600" fill="#604826" opacity="0.95">
+      "Có những người bạn chỉ ở bên ta một đoạn đường,
+    </text>
+    <text x="0" y="258" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="28" font-weight="600" fill="#D7685A">
+      nhưng ở lại trong tim rất lâu."
+    </text>
+
+    <!-- Metadata line -->
+    <text x="0" y="325" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#645F73">
+      Tác giả: Lương Gia Hân &amp; Vũ Hoàng Thủy · GVHD: ThS. Phan Thị Hường
+    </text>
+    <text x="0" y="355" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="18" font-weight="400" fill="#8B9DA8">
+      Trường Đại học Lạc Hồng · Truyền thông Đa phương tiện 2026
+    </text>
+  </g>
+
+  <!-- Big Decorative Paw on the right -->
+  <g transform="translate(900, 310) scale(1.6)" fill="#D7685A" opacity="0.85">
+    <path d="M0 -15 C-24 -15 -35 5 -35 30 C-35 48 -20 60 0 60 C20 60 35 48 35 30 C35 5 24 -15 0 -15 Z" fill="#F3D082" />
+    <ellipse cx="-28" cy="-30" rx="10" ry="14" transform="rotate(-20 -28 -30)" fill="#D7685A" />
+    <ellipse cx="-10" cy="-45" rx="11" ry="15" transform="rotate(-5 -10 -45)" fill="#D7685A" />
+    <ellipse cx="12" cy="-45" rx="11" ry="15" transform="rotate(5 12 -45)" fill="#D7685A" />
+    <ellipse cx="30" cy="-30" rx="10" ry="14" transform="rotate(20 30 -30)" fill="#D7685A" />
+  </g>
+</svg>
+

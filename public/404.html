@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Không tìm thấy trang | Đốm Ơi</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    :root {
+      --color-warm-yellow: #F3D082;
+      --color-flame: #D7685A;
+      --color-kobicha: #604826;
+      --color-delft-blue: #34425C;
+      --font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--color-warm-yellow);
+      color: var(--color-kobicha);
+      font-family: var(--font-family);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 560px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 3rem 2rem;
+      border-radius: 24px;
+      border: 2px dashed rgba(96, 72, 38, 0.2);
+      box-shadow: 0 10px 30px rgba(96, 72, 38, 0.08);
+    }
+    .paw-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      animation: gentle-bounce 2s infinite ease-in-out;
+    }
+    @keyframes gentle-bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    h1 {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      color: var(--color-flame);
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: var(--color-kobicha);
+      opacity: 0.9;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--color-flame);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.85rem 1.8rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(215, 104, 90, 0.35);
+    }
+    .btn:hover {
+      background-color: #c05245;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(215, 104, 90, 0.45);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="paw-icon">🐾</div>
+    <h1>404</h1>
+    <h2>Lạc đường rồi bạn ơi!</h2>
+    <p>Trang bạn đang tìm kiếm không tồn tại hoặc đã chuyển đi nơi khác. Hãy quay về trang chính để tiếp tục đồng hành cùng Hà Linh và Đốm nhé.</p>
+    <a href="/" class="btn">
+      <span>Trở về trang chủ</span>
+      <span>→</span>
+    </a>
+  </div>
+</body>
+</html>
+

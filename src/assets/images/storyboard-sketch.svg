@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <!-- Paper Background with pencil grid -->
+  <rect width="800" height="450" fill="#FDFBF7" />
+  
+  <!-- Grid paper marks -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E6E0D3" stroke-width="0.8" />
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid)" />
+
+  <!-- Storyboard Sheet Borders & Title Block -->
+  <rect x="30" y="30" width="740" height="390" fill="none" stroke="#8B9DA8" stroke-width="2" />
+  <line x1="30" y1="70" x2="770" y2="70" stroke="#8B9DA8" stroke-width="1.5" />
+  
+  <text x="50" y="58" font-family="'Courier New', monospace" font-size="18" font-weight="bold" fill="#34425C">
+    PROJECT: DOM OI · SCENE 01 / CUT 03 · ROUGH STORYBOARD
+  </text>
+  <text x="750" y="58" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#D7685A" text-anchor="end">
+    [SKETCH PASS]
+  </text>
+
+  <!-- Note box explaining character pencil colors -->
+  <rect x="50" y="85" width="340" height="34" rx="4" fill="#EEF2F6" stroke="#8B9DA8" stroke-width="1" />
+  <circle cx="65" cy="102" r="6" fill="#4B56A8" />
+  <text x="78" y="106" font-family="monospace" font-size="12" fill="#34425C">HÀ LINH (Nét xanh tím)</text>
+  <circle cx="215" cy="102" r="6" fill="#E86A76" />
+  <text x="228" y="106" font-family="monospace" font-size="12" fill="#34425C">ĐỐM (Nét hồng cam)</text>
+
+  <!-- Rough Sketch Art in Frame -->
+  <g transform="translate(60, 40)">
+    <!-- Horizon & Rough Tree line -->
+    <path d="M0 280 C150 260 300 290 680 270" stroke="#A0AAB2" stroke-width="2" stroke-dasharray="6,4" fill="none" />
+    <path d="M520 270 C540 180 500 120 560 90 C620 120 640 190 630 270" stroke="#8B9DA8" stroke-width="2" fill="none" />
+    <circle cx="560" cy="110" r="50" stroke="#A0AAB2" stroke-width="1.5" stroke-dasharray="4" fill="none" />
+
+    <!-- Cardboard Box rough sketch -->
+    <polygon points="120,250 200,220 260,240 180,270" fill="none" stroke="#7A654C" stroke-width="2" />
+    <polygon points="120,250 180,270 180,330 120,310" fill="none" stroke="#7A654C" stroke-width="2" />
+    <polygon points="180,270 260,240 260,300 180,330" fill="none" stroke="#7A654C" stroke-width="2" />
+
+    <!-- Hà Linh rough sketch (Blue-Violet lines #4B56A8) -->
+    <g stroke="#4B56A8" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <!-- Head Circle -->
+      <circle cx="360" cy="190" r="28" />
+      <path d="M340 170 C350 155 370 155 380 170" />
+      <path d="M335 180 C325 190 325 210 335 220" />
+      <path d="M385 180 C395 190 395 210 385 220" />
+      <line x1="360" y1="218" x2="360" y2="235" />
+      <!-- Body line -->
+      <path d="M340 235 L380 235 L390 290 L330 290 Z" />
+      <!-- Reaching Arm toward Dog -->
+      <path d="M340 240 C300 250 270 265 240 275" />
+      <circle cx="236" cy="276" r="6" stroke-dasharray="2" />
+      <!-- Legs kneeling -->
+      <path d="M340 290 C330 310 310 330 330 340 L370 340" />
+      <path d="M375 290 C385 310 395 330 410 340" />
+    </g>
+
+    <!-- Đốm rough sketch (Pink-Orange lines #E86A76) -->
+    <g stroke="#E86A76" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <!-- Head -->
+      <circle cx="210" cy="260" r="18" />
+      <!-- Ears floppy -->
+      <path d="M198 250 C190 260 192 270 196 275" />
+      <path d="M222 250 C230 260 228 270 224 275" />
+      <!-- Snout -->
+      <circle cx="204" cy="266" r="5" />
+      <!-- Body oval -->
+      <ellipse cx="175" cy="285" rx="25" ry="16" />
+      <!-- Tail wagging arcs -->
+      <path d="M150 280 C135 270 130 260 135 250" />
+      <path d="M130 245 C125 255 125 265 130 270" stroke-dasharray="2" />
+      <!-- Front paw reaching -->
+      <line x1="190" y1="295" x2="215" y2="305" />
+      <line x1="170" y1="298" x2="168" y2="315" />
+    </g>
+
+    <!-- Camera Directional Arrows & Action Notes -->
+    <g stroke="#D7685A" stroke-width="2" fill="none">
+      <path d="M260 360 L420 360" stroke-dasharray="4" marker-end="url(#arrow)" />
+      <text x="340" y="380" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#D7685A" text-anchor="middle">
+        ACTION: HÀ LINH TÌNH CỜ PHÁT HIỆN ĐỐM VEN ĐƯỜNG ĐẤT
+      </text>
+    </g>
+  </g>
+</svg>
+

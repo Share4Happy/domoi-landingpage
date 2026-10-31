@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warmSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9EA" />
+      <stop offset="60%" stop-color="#FCE5AC" />
+      <stop offset="100%" stop-color="#CDCD74" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#warmSky)" />
+  <circle cx="520" cy="70" r="100" fill="#FFF2CE" opacity="0.8" />
+  <path d="M0 240 Q160 210 320 230 Q480 250 640 220 L640 360 L0 360 Z" fill="#CDCD74" />
+  <path d="M0 280 Q200 250 420 270 Q540 290 640 260 L640 360 L0 360 Z" fill="#B2B855" />
+  <!-- Big tree -->
+  <path d="M120 360 C110 240 130 180 110 120 C130 140 160 240 170 360 Z" fill="#694625" />
+  <circle cx="110" cy="110" r="70" fill="#8A9D3F" opacity="0.9" />
+  <circle cx="160" cy="90" r="60" fill="#A5B854" opacity="0.9" />
+  <!-- Little box & paws -->
+  <polygon points="340,260 380,240 420,255 380,275" fill="#DEB07D" />
+  <polygon points="340,260 380,275 380,315 340,300" fill="#CB9C68" />
+  <polygon points="380,275 420,255 420,295 380,315" fill="#9C6F3D" />
+  <text x="320" y="340" font-family="'Quicksand', sans-serif" font-weight="700" font-size="16" fill="#604826" text-anchor="middle">
+    Cánh đồng cỏ &amp; Thùng giấy tuổi thơ
+  </text>
+</svg>
+

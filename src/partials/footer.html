@@ -1,0 +1,97 @@
+<!-- 14 · CHÂN TRANG (FOOTER) & MODALS -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <img src="/images/branding/logo-dom-oi-white.png" alt="Đốm Ơi" class="footer-logo-img" width="130" height="84" loading="lazy" />
+        </div>
+        <p>
+          Phim hoạt hình ngắn 2D về tình bạn giữa con người và động vật, sự mất mát và hành trình chữa lành. Tôn vinh tình yêu thương và nâng cao nhận thức bảo vệ thú cưng tại Việt Nam.
+        </p>
+        <p style="margin-top: 0.6rem; opacity: 0.8; font-size: var(--font-size-xs);">
+          Đồ án tốt nghiệp do sinh viên thực hiện · Trường Đại học Lạc Hồng (Niên khóa 2026)
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-links-title">Nội dung chính</div>
+        <div class="footer-links-list">
+          <a href="#intro">Giới thiệu tác phẩm</a>
+          <a href="#journey">4 Chặng cảm xúc</a>
+          <a href="#characters">Tuyến nhân vật</a>
+          <a href="#visual">Bối cảnh &amp; Ánh sáng</a>
+          <a href="#behind-the-scenes">Hậu trường 12 tuần</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-links-title">Đồ án &amp; Kết nối</div>
+        <div class="footer-links-list">
+          <a href="https://behance.net/gallery/256184407/Dm-Oi-Animated-Short-Film" target="_blank" rel="noopener noreferrer">Behance Portfolio ↗</a>
+          <a href="#message">Thông điệp bảo vệ thú cưng</a>
+          <a href="#merch">Hệ thống ấn phẩm</a>
+          <a href="#memory-wall">Tường kỷ niệm</a>
+          <a href="#faq">Câu hỏi thường gặp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-lhu">
+        <img src="/images/branding/lhu-logo-trans.png" alt="Đại học Lạc Hồng" class="footer-lhu-img" width="160" height="71" loading="lazy" />
+      </div>
+      <p>© 2026 Đốm Ơi — 2D Animated Short Film · Sản phẩm do sinh viên thực hiện</p>
+      <p>Sinh viên thực hiện: Lương Gia Hân &amp; Vũ Hoàng Thủy · GVHD: ThS. Phan Thị Hường</p>
+      <p>Trường Đại học Lạc Hồng · Khoa Cơ điện - Điện tử · Ngành Truyền thông Đa phương tiện.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 1. Modal Xem Phim & PV (Video Modal) -->
+<div class="modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-label="Xem PV phim ngắn Đốm Ơi">
+  <div class="modal-container video-modal-container">
+    <div class="video-modal-header">
+      <div class="video-modal-title">
+        <span>🎬</span>
+        <span>Đốm Ơi — Promotional Video &amp; Hồ Sơ Đồ Án Tốt Nghiệp</span>
+      </div>
+      <button class="modal-close-btn" id="closeVideoModal" aria-label="Đóng cửa sổ">✕</button>
+    </div>
+    
+    <div class="video-wrapper">
+      <iframe 
+        id="videoPlayerFrame"
+        src="https://www.behance.net/embed/project/256184407?ilo0=1" 
+        title="Đốm Ơi – 2D Animated Short Film PV trên Behance" 
+        frameborder="0" 
+        allowfullscreen 
+        lazyload
+        refererPolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+
+    <div class="video-modal-footer">
+      <p class="video-modal-hint">
+        🐾 Khám phá trọn vẹn PV diễn hoạt, concept art và hành trình sản xuất tại trang Behance chính thức.
+      </p>
+      <a 
+        href="https://www.behance.net/gallery/256184407/Dm-Oi-Animated-Short-Film" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="btn btn-primary btn-sm">
+        <span>Mở xem trên Behance</span>
+        <span>↗</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Modal Xem Ảnh Phóng To (Lightbox Modal) -->
+<div class="modal-overlay" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+  <div class="lightbox-content">
+    <button class="modal-close-btn" id="closeLightboxModal" aria-label="Đóng xem ảnh">✕</button>
+    <img id="lightboxImage" src="" alt="Ảnh phóng to" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>

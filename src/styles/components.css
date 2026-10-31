@@ -1,0 +1,439 @@
+/**
+ * COMPONENTS STYLES — ĐỐM ƠI LANDING PAGE
+ * Các thành phần giao diện tái sử dụng: Buttons, Cards, Modals, Forms, Sliders, Badges, Before/After Slider
+ */
+
+/* ==========================================================================
+   1. BUTTONS (NÚT BẤM)
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background-color: var(--color-flame);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-flame);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-flame-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(215, 104, 90, 0.45);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: var(--color-kobicha);
+  border: 2px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-bg-card-warm);
+  border-color: var(--color-warm-peach);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-kobicha);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(96, 72, 38, 0.08);
+}
+
+.btn-sm {
+  font-size: var(--font-size-sm);
+  padding: 0.55rem 1.25rem;
+}
+
+.btn-lg {
+  font-size: var(--font-size-lg);
+  padding: 1.05rem 2.4rem;
+}
+
+/* ==========================================================================
+   2. CARDS (THẺ NỘI DUNG)
+   ========================================================================== */
+.card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-interactive:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(215, 104, 90, 0.25);
+}
+
+/* ==========================================================================
+   3. BADGES & TAGS
+   ========================================================================== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-warm-yellow);
+  color: var(--color-kobicha);
+  letter-spacing: 0.03em;
+}
+
+.badge-outline {
+  background: transparent;
+  border: 1px solid currentColor;
+}
+
+/* ==========================================================================
+   4. FORM ELEMENTS (CHO TƯỜNG KỶ NIỆM & GÓP Ý)
+   ========================================================================== */
+.form-group {
+  margin-bottom: var(--space-5);
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-2);
+  color: var(--color-kobicha);
+}
+
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border-subtle);
+  background: #FFFFFF;
+  color: var(--color-kobicha);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  font-size: var(--font-size-base);
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--color-flame);
+  box-shadow: 0 0 0 4px rgba(215, 104, 90, 0.15);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ==========================================================================
+   5. VIDEO MODAL & LIGHTBOX
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(30, 40, 60, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.modal-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  width: 100%;
+  max-width: 920px;
+  background: #111;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  z-index: 10;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  background: var(--color-flame);
+  transform: rotate(90deg);
+}
+
+.video-modal-container {
+  display: flex;
+  flex-direction: column;
+  background: #18191D;
+}
+
+.video-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  background: #22242B;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.video-modal-title {
+  color: #FFFFFF;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.video-modal-header .modal-close-btn {
+  position: static;
+  width: 34px;
+  height: 34px;
+  font-size: 1.1rem;
+}
+
+.video-modal-footer {
+  padding: var(--space-4) var(--space-6);
+  background: #22242B;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.video-modal-hint {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--font-size-xs);
+  margin: 0;
+  flex: 1;
+  min-width: 240px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+}
+
+.video-wrapper iframe, .video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Lightbox Image Preview */
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.lightbox-caption {
+  color: #FFFFFF;
+  margin-top: var(--space-4);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}
+
+/* ==========================================================================
+   6. BEFORE / AFTER COMPARISON SLIDER (STORYBOARD VS RENDER)
+   ========================================================================== */
+.comparison-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid #FFFFFF;
+  aspect-ratio: 16/9;
+  user-select: none;
+}
+
+.comparison-image-before,
+.comparison-image-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.comparison-image-before img,
+.comparison-image-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.comparison-image-after {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  transition: clip-path 50ms linear;
+}
+
+.comparison-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  cursor: ew-resize;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.comparison-handle-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-flame);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 14px rgba(215, 104, 90, 0.5);
+  pointer-events: none;
+}
+
+.comparison-label {
+  position: absolute;
+  bottom: var(--space-4);
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  background: rgba(0, 0, 0, 0.65);
+  color: #FFFFFF;
+  backdrop-filter: blur(4px);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.comparison-label.label-before {
+  left: var(--space-4);
+}
+
+.comparison-label.label-after {
+  right: var(--space-4);
+}
+
+/* ==========================================================================
+   7. FAQ ACCORDION ITEM
+   ========================================================================== */
+.faq-item {
+  border-bottom: 1.5px solid var(--color-border-subtle);
+  padding: var(--space-4) 0;
+  transition: background-color var(--transition-fast);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  padding: var(--space-3) 0;
+  color: var(--color-kobicha);
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-4);
+  color: var(--color-dim-gray);
+  line-height: var(--line-height-relaxed);
+  display: none;
+  font-size: var(--font-size-base);
+}
+
+.faq-item.is-open .faq-answer {
+  display: block;
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+  transition: transform var(--transition-normal);
+  color: var(--color-flame);
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(180deg);
+}

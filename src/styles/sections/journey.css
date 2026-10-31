@@ -1,0 +1,177 @@
+/**
+ * SECTION 03 — EMOTION JOURNEY (4 CHẶNG CẢM XÚC ĐỔI MÀU)
+ */
+
+.journey-section {
+  position: relative;
+  transition: background-color var(--transition-smooth), color var(--transition-smooth);
+}
+
+/* Timeline navigation bar for the 4 stages */
+.journey-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-12);
+  flex-wrap: wrap;
+}
+
+.journey-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  background: #FFFFFF;
+  color: var(--color-kobicha);
+  border: 1.5px solid var(--color-border-subtle);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.journey-nav-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-flame);
+}
+
+.journey-nav-btn.is-active {
+  background: var(--color-flame);
+  color: #FFFFFF;
+  border-color: var(--color-flame);
+  box-shadow: 0 4px 14px rgba(215, 104, 90, 0.4);
+}
+
+.journey-stages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.stage-card {
+  border-radius: var(--radius-2xl);
+  padding: var(--space-10) var(--space-8);
+  transition: all var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .stage-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+/* Chặng 1: Gắn bó (Vàng kem ấm #F3D082) */
+.stage-card[data-stage="1"] {
+  background: linear-gradient(145deg, #FFFDF8 0%, #FCE6AB 100%);
+  color: var(--color-kobicha);
+  border-color: #EFCA9E;
+}
+
+/* Chặng 2: Biến cố (Xanh xám đậm Delft Blue #34425C) */
+.stage-card[data-stage="2"] {
+  background: linear-gradient(145deg, #34425C 0%, #1E2738 100%);
+  color: #FAF6EF;
+  border-color: #4A5B79;
+}
+
+.stage-card[data-stage="2"] .stage-title,
+.stage-card[data-stage="2"] .stage-quote {
+  color: #FFFFFF;
+}
+
+.stage-card[data-stage="2"] .stage-number {
+  background: rgba(243, 208, 130, 0.2);
+  color: var(--color-warm-yellow);
+}
+
+/* Chặng 3: Giấc mơ (Tím xanh mơ màng #6469A8) */
+.stage-card[data-stage="3"] {
+  background: linear-gradient(145deg, #6469A8 0%, #464A80 100%);
+  color: #FFFFFF;
+  border-color: #7E83BF;
+}
+
+.stage-card[data-stage="3"] .stage-title,
+.stage-card[data-stage="3"] .stage-quote {
+  color: #FFFFFF;
+}
+
+.stage-card[data-stage="3"] .stage-number {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+/* Chặng 4: Chữa lành (Hoàng hôn cam hồng tím) */
+.stage-card[data-stage="4"] {
+  background: var(--gradient-stage-4);
+  color: var(--color-kobicha);
+  border-color: #E69D8F;
+}
+
+.stage-card[data-stage="4"] .stage-number {
+  background: rgba(215, 104, 90, 0.15);
+  color: var(--color-flame);
+}
+
+.stage-number {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-black);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-3);
+  background: rgba(96, 72, 38, 0.1);
+  width: fit-content;
+}
+
+.stage-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  margin-bottom: var(--space-3);
+}
+
+.stage-quote {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: var(--line-height-snug);
+  font-style: italic;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+  color: var(--color-flame);
+}
+
+.stage-desc {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+}
+
+.stage-visual {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  background: #FFF;
+}
+
+.stage-visual img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}

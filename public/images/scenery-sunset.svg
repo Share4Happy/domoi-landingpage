@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sunsetBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFCA9E" />
+      <stop offset="35%" stop-color="#E89E90" />
+      <stop offset="70%" stop-color="#D7685A" />
+      <stop offset="100%" stop-color="#34425C" />
+    </linearGradient>
+    <radialGradient id="sunSunset" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5DB" />
+      <stop offset="50%" stop-color="#F8C291" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#D7685A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#sunsetBg)" />
+  <circle cx="320" cy="190" r="120" fill="url(#sunSunset)" />
+
+  <!-- Skyline of Rescue Shelter & Trees -->
+  <path d="M0 240 Q180 200 360 220 Q540 240 640 210 L640 360 L0 360 Z" fill="#283347" />
+  
+  <!-- Silhouette of Hà Linh (21 tuổi) looking into sunset -->
+  <g transform="translate(300, 160)" fill="#1B2433">
+    <!-- Body & Vest -->
+    <path d="M12 40 L28 40 L32 90 L8 90 Z" />
+    <!-- Wide Pants -->
+    <path d="M8 90 L2 140 L16 140 L20 100 L24 140 L38 140 L32 90 Z" />
+    <!-- Head & Hair -->
+    <circle cx="20" cy="22" r="12" />
+    <path d="M10 20 C8 32 10 40 14 45 C18 40 24 38 28 35 C28 20 25 15 20 15 Z" />
+    <!-- Small rescue dog sitting beside her -->
+    <ellipse cx="48" cy="120" rx="12" ry="8" />
+    <circle cx="56" cy="112" r="7" />
+    <path d="M40 118 C35 110 32 105 38 102" stroke="#1B2433" stroke-width="2" />
+  </g>
+
+  <text x="320" y="340" font-family="'Quicksand', sans-serif" font-weight="700" font-size="16" fill="#FAF6EE" text-anchor="middle">
+    Hoàng hôn trạm cứu hộ — Bình yên &amp; Chữa lành
+  </text>
+</svg>

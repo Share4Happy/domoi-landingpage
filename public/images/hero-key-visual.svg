@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDF4DE" />
+      <stop offset="45%" stop-color="#FCE1A8" />
+      <stop offset="100%" stop-color="#EFCA9E" />
+    </linearGradient>
+    <linearGradient id="hillGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D6DE82" />
+      <stop offset="100%" stop-color="#A5B854" />
+    </linearGradient>
+    <linearGradient id="hillGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BACD68" />
+      <stop offset="100%" stop-color="#8A9D3F" />
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9E6" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#FCE6AB" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#F3D082" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="watercolorPaper" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#FFF8E8" surfaceScale="1.2" result="light">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="600" height="700" rx="28" fill="url(#skyGrad)" />
+
+  <!-- Sun Rays & Warm Glow -->
+  <circle cx="480" cy="140" r="180" fill="url(#sunGlow)" />
+  <circle cx="480" cy="140" r="60" fill="#FFFBF0" opacity="0.8" filter="url(#softGlow)" />
+
+  <!-- Soft Clouds -->
+  <g fill="#FFFDF5" opacity="0.65" filter="url(#softGlow)">
+    <path d="M70 120 Q95 90 140 100 Q180 85 220 110 Q250 135 220 160 Q130 165 70 140 Z" />
+    <path d="M320 180 Q350 155 390 165 Q420 150 450 170 Q470 195 440 215 Q360 220 320 200 Z" opacity="0.5" />
+  </g>
+
+  <!-- Distant Foliage & Hills -->
+  <path d="M-20 480 Q120 420 280 450 Q440 480 620 430 L620 700 L-20 700 Z" fill="url(#hillGrad1)" opacity="0.75" />
+  <path d="M-20 520 Q160 480 340 510 Q500 540 620 490 L620 700 L-20 700 Z" fill="url(#hillGrad2)" />
+
+  <!-- The Big Cozy Tree on the Right -->
+  <g>
+    <!-- Trunk -->
+    <path d="M490 680 C480 550 510 420 470 340 C460 320 480 300 500 320 C540 370 560 520 570 680 Z" fill="#694625" opacity="0.9" />
+    <!-- Tree Leaves Clumps -->
+    <circle cx="460" cy="270" r="90" fill="#7D9936" opacity="0.9" />
+    <circle cx="530" cy="230" r="100" fill="#91AC3D" opacity="0.95" />
+    <circle cx="410" cy="310" r="75" fill="#69852B" opacity="0.9" />
+    <circle cx="490" cy="330" r="85" fill="#84A034" opacity="0.92" />
+    <!-- Highlights in tree -->
+    <circle cx="510" cy="210" r="50" fill="#B3CB5A" opacity="0.6" />
+  </g>
+
+  <!-- Foreground Grass Details & Wildflowers -->
+  <g fill="#5F7523">
+    <path d="M60 630 Q70 590 85 625 Q95 580 110 630 Z" />
+    <path d="M180 650 Q190 600 205 645 Q215 605 230 650 Z" />
+    <path d="M340 640 Q350 595 365 635 Q375 600 390 640 Z" />
+  </g>
+  <!-- Little yellow/white flowers -->
+  <g fill="#FFFDF0">
+    <circle cx="75" cy="620" r="4" fill="#FCE1A8" />
+    <circle cx="120" cy="640" r="3.5" fill="#FFFFFF" />
+    <circle cx="215" cy="635" r="4" fill="#FCE1A8" />
+    <circle cx="360" cy="625" r="3.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Cardboard Box (Nơi Hà Linh lần đầu gặp Đốm) -->
+  <g transform="translate(130, 480) scale(0.9)">
+    <!-- Box back & inner -->
+    <polygon points="10,40 100,10 170,35 75,70" fill="#B88A58" />
+    <polygon points="75,70 170,35 170,110 75,145" fill="#9C6F3D" />
+    <polygon points="10,40 75,70 75,145 10,110" fill="#CB9C68" />
+    <!-- Box Flaps open -->
+    <polygon points="10,40 40,0 120,-10 100,10" fill="#DEB07D" />
+    <polygon points="75,145 90,195 180,150 170,110" fill="#B88A58" opacity="0.4" />
+  </g>
+
+  <!-- HÀ LINH (Tuổi 14) - Ngồi trên thảm cỏ, tươi cười vươn tay -->
+  <g transform="translate(240, 360)">
+    <!-- Shadow -->
+    <ellipse cx="60" cy="250" rx="80" ry="18" fill="#4B5B1E" opacity="0.35" />
+
+    <!-- Legs & Blue-Green Shorts -->
+    <path d="M30 190 C25 210 20 230 10 245 C25 248 55 245 60 235 C65 215 65 195 65 190 Z" fill="#2E7D32" />
+    <path d="M65 190 C70 210 80 230 95 245 C110 248 135 245 130 235 C115 215 105 195 100 190 Z" fill="#256B29" />
+    <!-- Bare legs & feet -->
+    <path d="M10 245 C5 250 15 258 35 254" stroke="#F5D0A9" stroke-width="12" stroke-linecap="round" />
+    <path d="M95 245 C100 250 115 258 130 254" stroke="#F5D0A9" stroke-width="12" stroke-linecap="round" />
+
+    <!-- Body & Shirt (Trắng phối tay cam) -->
+    <path d="M35 130 C30 150 25 185 30 195 C55 200 85 200 105 195 C110 185 105 150 95 130 Z" fill="#FFFFFF" />
+    <!-- Orange sleeves -->
+    <path d="M25 130 C15 140 10 155 18 165 C28 165 35 150 38 135 Z" fill="#E67E22" />
+    <path d="M98 130 C108 140 120 155 125 168 C115 172 102 158 95 138 Z" fill="#E67E22" />
+
+    <!-- Arms: vươn tay trái vuốt ve Đốm -->
+    <path d="M18 165 C-10 185 -30 200 -50 210 C-55 215 -45 220 -38 216 C-20 206 5 190 25 175 Z" fill="#F5D0A9" />
+    <!-- Right arm resting -->
+    <path d="M120 168 C135 185 140 210 135 230 C125 232 118 220 115 205 Z" fill="#F5D0A9" />
+
+    <!-- Neck & Face -->
+    <rect x="56" y="110" width="18" height="22" rx="6" fill="#F5D0A9" />
+    <!-- Face Head -->
+    <circle cx="65" cy="90" r="32" fill="#FBD5B5" />
+    <!-- Rosy Cheeks -->
+    <circle cx="48" cy="98" r="6" fill="#F5A391" opacity="0.65" />
+    <circle cx="82" cy="98" r="6" fill="#F5A391" opacity="0.65" />
+    <!-- Smiling Eyes -->
+    <path d="M48 88 Q54 82 60 88" fill="none" stroke="#50381E" stroke-width="3" stroke-linecap="round" />
+    <path d="M72 88 Q78 82 84 88" fill="none" stroke="#50381E" stroke-width="3" stroke-linecap="round" />
+    <!-- Warm smile -->
+    <path d="M57 102 Q66 112 75 102" fill="none" stroke="#D7685A" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Hair (Đen nâu tự nhiên, buộc gọn kiểu học sinh) -->
+    <path d="M35 85 C32 50 50 50 68 50 C95 50 102 65 100 95 C90 75 80 70 65 72 C50 70 42 75 35 85 Z" fill="#3D2918" />
+    <!-- Ponytail / side strands -->
+    <path d="M32 75 C20 85 22 105 32 115 C30 100 28 90 32 75 Z" fill="#3D2918" />
+    <path d="M98 75 C108 85 106 105 96 115 C98 100 100 90 98 75 Z" fill="#3D2918" />
+  </g>
+
+  <!-- CHÚ CHÓ ĐỐM 🐾 - Lông trắng xù với các mảng nâu, mắt to tròn háo hức -->
+  <g transform="translate(145, 520)">
+    <!-- Dog Shadow -->
+    <ellipse cx="40" cy="85" rx="50" ry="12" fill="#4B5B1E" opacity="0.4" />
+
+    <!-- Wagging Tail -->
+    <path d="M-5 45 C-25 35 -30 20 -20 15 C-12 18 -10 30 5 40 Z" fill="#FFFFFF">
+      <animateTransform attributeName="transform" type="rotate" values="0 0 45; 18 0 45; -10 0 45; 0 0 45" dur="0.8s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Body (Trắng xù) -->
+    <ellipse cx="35" cy="50" rx="35" ry="25" fill="#FFFFFF" />
+    <!-- Big Brown Patch on back -->
+    <path d="M20 30 C30 25 45 28 48 40 C45 52 25 50 18 42 Z" fill="#8D5B4C" />
+
+    <!-- Legs -->
+    <path d="M12 65 L8 85 M28 68 L26 86 M45 68 L48 85 M58 65 L64 85" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" />
+    <!-- Little brown paws -->
+    <circle cx="8" cy="86" r="5" fill="#8D5B4C" />
+    <circle cx="64" cy="86" r="5" fill="#8D5B4C" />
+
+    <!-- Head -->
+    <circle cx="65" cy="30" r="24" fill="#FFFFFF" />
+    <!-- Brown Patch over left eye & ear -->
+    <path d="M50 10 C62 5 75 10 75 25 C75 38 60 40 52 30 Z" fill="#8D5B4C" opacity="0.95" />
+    <!-- Ears (mềm rủ xuống) -->
+    <ellipse cx="48" cy="18" rx="8" ry="16" transform="rotate(-25 48 18)" fill="#8D5B4C" />
+    <ellipse cx="80" cy="18" rx="7" ry="14" transform="rotate(25 80 18)" fill="#FFFFFF" />
+
+    <!-- Cute Big Eyes -->
+    <circle cx="60" cy="28" r="4.5" fill="#2C1A11" />
+    <circle cx="61" cy="26" r="1.5" fill="#FFFFFF" />
+    <circle cx="74" cy="28" r="4.5" fill="#2C1A11" />
+    <circle cx="75" cy="26" r="1.5" fill="#FFFFFF" />
+
+    <!-- Snout & Nose -->
+    <ellipse cx="70" cy="38" rx="8" ry="6" fill="#FAF6EE" />
+    <ellipse cx="70" cy="36" rx="4" ry="3" fill="#2C1A11" />
+    <!-- Little Pink Tongue sticking out happily -->
+    <path d="M68 41 Q70 47 73 41 Z" fill="#D7685A" />
+  </g>
+
+  <!-- Floating Sparkles / Floating Warm Dust Particles in Air -->
+  <g fill="#FFFDF0" opacity="0.75">
+    <circle cx="180" cy="280" r="3" filter="url(#softGlow)" />
+    <circle cx="230" cy="210" r="2" filter="url(#softGlow)" />
+    <circle cx="290" cy="260" r="3.5" filter="url(#softGlow)" />
+    <circle cx="340" cy="340" r="2.5" filter="url(#softGlow)" />
+    <circle cx="120" cy="380" r="2" filter="url(#softGlow)" />
+  </g>
+
+  <!-- Subtle Film Title Accent at Bottom Left -->
+  <text x="35" y="665" font-family="'Quicksand', 'Nunito', sans-serif" font-size="22" font-weight="900" fill="#604826" opacity="0.85">
+    Đốm Ơi · <tspan font-weight="600" font-size="16" fill="#D7685A">2D Animated Film</tspan>
+  </text>
+  <text x="565" y="665" font-family="'Nunito', sans-serif" font-size="14" font-weight="700" fill="#604826" opacity="0.6" text-anchor="end">
+    Lạc Hồng 2026
+  </text>
+</svg>

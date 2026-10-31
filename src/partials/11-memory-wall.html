@@ -1,0 +1,47 @@
+<!-- 11 · "ĐỐM CỦA BẠN LÀ AI?" — TƯỜNG CHIA SẺ KÝ ỨC -->
+<section class="section memory-section" id="memory-wall">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Góc đồng cảm</span>
+      <h2 class="section-title">Ai là "Đốm" của bạn?</h2>
+      <p class="section-description">
+        Mỗi người trong chúng ta đều có một người bạn bốn chân đặc biệt trong tim. Hãy gửi gắm một kỷ niệm hoặc lời nhắn yêu thương đến người bạn nhỏ ấy tại đây.
+      </p>
+    </div>
+
+    <div class="memory-layout">
+      <!-- Cột Form gửi lời nhắn -->
+      <aside class="memory-form-card">
+        <h3 style="margin-bottom: var(--space-4); font-size: var(--font-size-xl); font-family: var(--font-family-heading);">
+          Gửi lời nhắn cho bạn nhỏ 🐾
+        </h3>
+        <form id="memoryForm">
+          <div class="form-group">
+            <label class="form-label" for="authorName">Tên hoặc biệt danh của bạn</label>
+            <input class="form-input" type="text" id="authorName" name="author" placeholder="Ví dụ: Hoàng My, Nhật Nam..." />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="petName">Tên người bạn thú cưng</label>
+            <input class="form-input" type="text" id="petName" name="petName" placeholder="Ví dụ: Đốm, Bông, Miu, Vàng..." />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="petMessage">Kỷ niệm hoặc lời muốn nói *</label>
+            <textarea class="form-textarea" id="petMessage" name="message" required placeholder="Chia sẻ một khoảnh khắc bạn nhớ nhất về bạn ấy..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <span>Gửi lên góc kỷ niệm</span>
+            <span>💌</span>
+          </button>
+        </form>
+      </aside>
+
+      <!-- Danh sách thẻ kỷ niệm hiển thị động -->
+      <div class="memory-cards-grid" id="memoryCardsContainer">
+        <!-- Render tự động bởi posts.js từ LocalStorage -->
+      </div>
+    </div>
+  </div>
+</section>

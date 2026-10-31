@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dreamBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4B518C" />
+      <stop offset="60%" stop-color="#767BB7" />
+      <stop offset="100%" stop-color="#A5A9D6" />
+    </linearGradient>
+    <radialGradient id="dreamGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#DCDFF7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#6469A8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Dream background -->
+  <rect width="640" height="360" fill="url(#dreamBg)" />
+
+  <!-- Mystical glowing path & horizon -->
+  <circle cx="320" cy="180" r="140" fill="url(#dreamGlow)" />
+  
+  <!-- Dream Clouds & floating islands -->
+  <g fill="#FFFDF9" opacity="0.3">
+    <ellipse cx="140" cy="240" rx="90" ry="25" />
+    <ellipse cx="500" cy="220" rx="100" ry="28" />
+    <ellipse cx="320" cy="280" rx="160" ry="35" />
+  </g>
+
+  <!-- Glowing path running toward home -->
+  <polygon points="320,180 200,360 440,360" fill="#FFFDF9" opacity="0.45" />
+
+  <!-- Silhouette of Đốm happily running towards the bright house in the distance -->
+  <g transform="translate(305, 175) scale(0.6)">
+    <ellipse cx="25" cy="20" rx="20" ry="12" fill="#FFFDF9" />
+    <circle cx="38" cy="12" r="10" fill="#FFFDF9" />
+    <path d="M5 16 C-5 8 -5 0 2 0" stroke="#FFFDF9" stroke-width="4" fill="none" />
+    <line x1="12" y1="28" x2="6" y2="40" stroke="#FFFDF9" stroke-width="4" stroke-linecap="round" />
+    <line x1="32" y1="28" x2="38" y2="40" stroke="#FFFDF9" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Distant tiny glowing house silhouette -->
+  <polygon points="320,150 310,165 330,165" fill="#FFEAA7" />
+  <rect x="312" y="165" width="16" height="15" fill="#FFEAA7" />
+
+  <text x="320" y="340" font-family="'Quicksand', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF" text-anchor="middle">
+    Con đường trong mơ — Chạy về bên Hà Linh
+  </text>
+</svg>

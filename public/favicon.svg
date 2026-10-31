@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="pawGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D082" />
+      <stop offset="100%" stop-color="#D7685A" />
+    </linearGradient>
+  </defs>
+  <!-- Main pad -->
+  <path d="M32 26 C23 26 17 33 17 43 C17 49 22 54 32 54 C42 54 47 49 47 43 C47 33 41 26 32 26 Z" fill="url(#pawGrad)" />
+  <!-- Toe pads -->
+  <circle cx="18" cy="20" r="6" fill="#D7685A" />
+  <circle cx="27" cy="14" r="6.5" fill="#D7685A" />
+  <circle cx="37" cy="14" r="6.5" fill="#D7685A" />
+  <circle cx="46" cy="20" r="6" fill="#D7685A" />
+</svg>
+

@@ -1,0 +1,13 @@
+/**
+ * SECTION 12 — FAQ STYLES
+ */
+
+.faq-section {
+  background-color: var(--color-bg-base);
+}
+
+.faq-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+

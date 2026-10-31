@@ -1,0 +1,121 @@
+/**
+ * SECTION 11 — MEMORY WALL ("ĐỐM CỦA BẠN LÀ AI?")
+ */
+
+.memory-section {
+  background-color: var(--color-bg-card-warm);
+}
+
+.memory-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .memory-layout {
+    grid-template-columns: 380px 1fr;
+  }
+}
+
+.memory-form-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 6rem;
+}
+
+.memory-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.memory-card {
+  background: #FFFDF9;
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-subtle);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.memory-card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: var(--shadow-md);
+}
+
+.memory-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.memory-paw-mark {
+  color: var(--color-warm-yellow);
+  font-size: 1.5rem;
+}
+
+.memory-date {
+  font-size: var(--font-size-xs);
+  color: var(--color-dim-gray);
+  opacity: 0.8;
+}
+
+.memory-message {
+  font-size: var(--font-size-base);
+  color: var(--color-kobicha);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-4);
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.memory-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--color-border-subtle);
+}
+
+.memory-author {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-kobicha);
+}
+
+.memory-author small {
+  display: block;
+  font-weight: normal;
+  color: var(--color-dim-gray);
+  font-size: var(--font-size-xs);
+}
+
+.memory-heart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(215, 104, 90, 0.08);
+  border: 1px solid rgba(215, 104, 90, 0.2);
+  color: var(--color-flame);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.memory-heart-btn:hover {
+  background: var(--color-flame);
+  color: #FFFFFF;
+}
