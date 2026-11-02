@@ -66,6 +66,7 @@ function initHeroPosterTabs() {
 
       const src = tab.getAttribute('data-poster-src');
       const title = tab.getAttribute('data-poster-title') || 'Poster Đốm Ơi';
+      const isPortrait = src && (src.includes('poster-co-vang') || src.includes('poster-dong-co'));
 
       if (src) {
         img.style.opacity = '0';
@@ -73,6 +74,13 @@ function initHeroPosterTabs() {
           img.src = src;
           frame.setAttribute('data-lightbox', src);
           frame.setAttribute('data-caption', title);
+          if (isPortrait) {
+            frame.classList.add('is-portrait');
+            frame.classList.remove('is-landscape');
+          } else {
+            frame.classList.add('is-landscape');
+            frame.classList.remove('is-portrait');
+          }
           img.style.opacity = '1';
         }, 150);
       }
