@@ -156,3 +156,25 @@
   margin: 0;
   line-height: var(--line-height-normal);
 }
+
+@media (max-width: 576px) {
+  .intro-specs-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .intro-pv-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .intro-pv-banner .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .intro-media-card {
+    border-width: 6px;
+    border-radius: var(--radius-xl);
+  }
+}
