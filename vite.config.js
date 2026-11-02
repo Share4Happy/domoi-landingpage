@@ -36,6 +36,7 @@ function htmlPartialsPlugin() {
 }
 
 export default defineConfig({
+  base: './',
   plugins: [htmlPartialsPlugin()],
   server: {
     port: 3000,
